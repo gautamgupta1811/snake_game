@@ -12,6 +12,7 @@ screen = pygame.display.set_mode((width, height))
 #color_1 = 100,120,126
 
 frog = pygame.image.load("assets/frog.png")
+frog = pygame.transform.scale(frog,(20,20))
 frogWidth = frog.get_width()
 frogHeight = frog.get_height()
 frogX = random.randint(0,width - frogWidth)
